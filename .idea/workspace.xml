@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6fda445d-8ae1-4360-bf35-cb4fce44fa5d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../cms/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/Http/Controllers/AdminAboutController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/Http/Controllers/AdminCategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/Http/Controllers/AdminEventController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/Http/Controllers/AdminPurchasesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/Http/Controllers/AdminShowsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/Http/Controllers/AdminTicketController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/Http/Controllers/UserCartController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/Http/Controllers/UserMainController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/Http/Controllers/UserPurchasesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/Http/Middleware/admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/Http/Middleware/cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/Http/Requests/StoreCategory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/Http/Requests/StoreEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/Http/Requests/StoreShow.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/Http/Requests/StoreTicket.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/Http/Requests/admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/Purchases.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/ShoppingCart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/about.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/shows.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/app/tickets.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/database/factories/EventFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/database/factories/PurchasesFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/database/factories/TicketFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/database/factories/showFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/database/migrations/2020_05_01_055214_create_events_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/database/migrations/2020_05_01_055342_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/database/migrations/2020_05_01_055507_create_tickets_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/database/migrations/2020_05_01_055557_create_shows_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/database/migrations/2020_05_01_055705_create_shopping_carts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/database/migrations/2020_05_01_055739_create__cart_ticket_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/database/migrations/2020_05_01_055827_create__purchases_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/database/migrations/2020_05_01_055951_create__about_page_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/database/migrations/2020_05_01_060101_add__status__column__to__events_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/database/migrations/2020_05_01_062348_add__column__updated_by_to__users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/3f41df64eca6b0fe8ba42b7b5941335064e4cd50/_flex.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/3f41df64eca6b0fe8ba42b7b5941335064e4cd50/_miscellaneous.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/7a4b5b3ce21862888be0c92f904edf0a9a799689/_color.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/7a4b5b3ce21862888be0c92f904edf0a9a799689/_fonts.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/7a4b5b3ce21862888be0c92f904edf0a9a799689/_responsive.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/7a4b5b3ce21862888be0c92f904edf0a9a799689/_variables.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_about.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_backtotop.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_blog.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_breadcrumb.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_buttons.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_client.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_contact.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_counter.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_cta.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_footer.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_header.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_heading.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_hero.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_preloader.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_reboot.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_schedule.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_spacing.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_speakar.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_sponsor.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_ticket.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/_widget.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/.sass-cache/ce674cbf631b69e3da5975c2f121d792ab203732/style.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/css/default-assets/classy-nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/css/fonts/ElegantIcons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/css/fonts/ElegantIcons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/css/fonts/ElegantIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/css/fonts/ElegantIcons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/css/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/css/material-design-iconic-font.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/css/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/fonts/classy-fonts.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/fonts/classy-fonts.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/fonts/classy-fonts.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/fonts/classy-fonts.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/img/1587922881AhlyZamalek.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/img/1587922927manu2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/img/1587922957realvsbarca.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/img/1587924462mohamedramdan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/img/1587946587cairokee.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/img/1587946622massar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/img/1587946677p vs r.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/img/1587948081sharmofers.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/img/1587948752ashraf abd elbaky.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/img/1587949279hauser.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/img/1587949303hauser.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/img/1587955534falaky.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/img/unknown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/components/ExampleComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/confer.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/default-assets/active.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/default-assets/avoid.console.error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/default-assets/classy-nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/default-assets/jquery.scrollup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/imagesloaded.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/isotope.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/jarallax-video.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/jarallax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/jquery.countdown.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/jquery.counterup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/jquery.easing.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/jquery.magnific-popup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/select2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/waypoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/js/wow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/lang/en/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/lang/en/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/lang/en/passwords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/lang/en/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/sass/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/sass/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_about.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_backtotop.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_blog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_client.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_contact.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_counter.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_cta.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_heading.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_hero.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_preloader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_schedule.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_speakar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_sponsor.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_ticket.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/_widget.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/mixins/_flex.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/mixins/_miscellaneous.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/utilities/_color.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/utilities/_fonts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/utilities/_responsive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/scss/utilities/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/public/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/resources/views/admin/about/about.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/resources/views/admin/admin.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/resources/views/admin/purchases/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/resources/views/admin/shows/event-shows.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/resources/views/admin/shows/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/resources/views/admin/tickets/event-tickets.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/resources/views/admin/tickets/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/resources/views/home/about_page.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/resources/views/home/cart.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/resources/views/home/category.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/resources/views/home/event.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/resources/views/home/main.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/resources/views/home/purchases.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/resources/views/home/templat.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X003538b1f47b76089c550b4e418c20ce.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X003f0d43f522369cddb0fbe8c8a3bee2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X007a4535c2b8ce14a013c80a09883611.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X00cbb6b17373aaf4011fab3262592ac4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X017ec4743999975e697cf9a1d0102414.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X020ffea6cbeb4ed21326ebb40db27007.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X027dec1eb0bc40a0feb9db265ba4daf1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X0298badccd55d123e6ff9ff3ee9d3bd8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X038176e92d82392bfec2d169f112d6c9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X03c402eff61fb49e41d432a142644e75.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X03ec8658b8d6b0e462b41a2dc3d90fa5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X04964156d1531dbe80a0370c2436305f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X04c1a40c78a3077ac5a4519f6890eaf5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X04e619a909566d5ba0b5b4ab1652aac3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X0509ac3dbfee8a42d4b10b95f13bdf99.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X060442e6df35ea56542bea78df370571.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X0633691ff7dd3e3598776ed48ba2bce6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X082185cfcd0a668592f617a2c8fdc66d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X0934b491d0fd9ef0ffb13ba171f17af8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X0973dffcccd87a691dab93c79bd181ab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X0a6ea4579b1f8cf26cc1788911068f17.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X0a90f15397f1d6c3b674416d18b90916.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X0bba5ec71709085f27ba7f2714c1dfad.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X0bc49dde8f0e9431e94ebd4296fb7e3b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X0c7651f98ce4bc5a966943c92493f420.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X0cd2fd36d95ee35fbd5ff3a9cd87df15.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X0d34090231685d840e6936ce67a7a185.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X0dad0b522ff16d8e08062251ab4421c9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X0f789bb3c401edf80b7ad41aef670e2b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X10183a2d859def216e30de1ea07915d3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X1035e82c8a4c29b487923146dfd5d195.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X108abb4883d64c52722aa5c27dc665c9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X10e3033e5300dac998fc1aedbc1feb5c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X111d8564ad4c4bd78ce3534ce9282679.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X124adc75011ed7d5594c3154f20b2bdc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X126ff77411af2123f413c2ad1a8541b7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X1341ea50cbcd0cd2120668b580e604bb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X1372c3f32a648ba8d060f68f3c581da5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X13a85878127b0dbfca5bc63b34759d5e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X13c365970f2a6e16f62e5c11dc21d32c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X15e69ea51f20da52831dfd01d7d2430a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X168563b3f88501acf58413eb3e4b6a7e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X16a90873083fbcfbb317ce5fe4886f71.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X170555f1f7f85cd2aa88b7b88fe41150.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X171c62464b559680ed6f4c22988f1b45.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X1755c1bc5e3146f72b6e0ad343acdc0d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X17732ecd4004c43a76cbd13d81a38d9a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X18d2e02f49230523398c1f0f326baf2c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X194c27557ae4bb4da005657d3e422888.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X1a03a673b622b938b00e0916e37ff651.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X1bb51a3df8c3d22aa6dfd31570686cdf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X1c16019363c6579d83d305ac89bd6b69.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X1c5de1ecea270db073e7d77b70679de0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X1cdde20501bf080b0378a67cf05049c1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X1d1314f848d6d8fb012283fc1bf56c21.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X1d93c068e96d3c33bf127902a49acfed.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X1e2f503ceac7dd8e6175b5292897320c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X1e304e56daf265199b9cff562e839032.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X1e38cd6292f68e24b7c6ecc1d4b5d414.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X1e8778c8a38c6bcb981537c70067af5a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X1fa7c5dce06cfe838b4de253a1d720ff.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X1ffe1f825d5259590dcfba71d3437f53.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X2055e66222d4ec66691aeb4d8aa465df.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X20748e2ac06c5c1f48a71d01a1c3f5f1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X20e8963409212042afaaefcf82c23651.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X211e46c9d8a0f2d6633009d2ef357e6b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X224d6e15fd89e90d26c7f7405bd8298d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X22a2a5a8306b35ac24b55046e8f97172.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X2319cbc438da99141056accbed3c3c9e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X232b3ba303fe7d2ae104d1c27933d989.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X23787cd348aa2748beed1dd5b365753d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X2428ae89a9cfd9623cbcc51dc1ffb2e0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X24be6b71a74729d275c52058b81b612c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X24df86b218bd02cf49fa379008771a0a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X24ee78228078d2acf2080cb110e28ed3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X2533f4166718d71448b72466e010218a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X25eeff23bd3104edf8bd13304f59ec52.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X26137efba6abc1a77497d028e806fdfc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X2680cb1c92b457a56113ca54fd0b8236.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X269aca845dd9ebd33fb959a2f88da600.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X26d41e6c9efcf67fee56b844cc56c39b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X275beddcfd2305a2308cf3898ed5f6b0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X28c5a8c7ec638eb7671dfc572a35edd1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X29e8227ead32cf537d2355c8e7aecd3a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X29fd5817d9e472399b6ee6ed729fe2c0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X2ae894db09f92fea5155024733426179.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X2bdd01a79fa539c022e59fb859e3bad4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X2cdbd850359901c8cd976110a9335637.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X2ce11ecb92e593cb2e88db564dfce200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X2db4feab9a99f2f9c4a1162c9af52c07.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X2df965acda5a2242a4314fc3cca0b303.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X2edae2c424cb32ee33ebca6a1d81b705.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X2f33bab277946037e749a708364ce168.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X317459bdbe97ba402ace15ea06a590f9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X31827e8341aaaa8649a456dffc69edb2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X326e720ee334d3c8c79941a3eb4453d9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X33077d35234fe1f1338dc431b51f0bdd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X34da7ef4da546c86d7ddfb86ca4b166b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X34dd12c13b70765b7e0f1a6e4b757c31.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X3507cc70a8fbc1c9638a0d5ba0f3ca1e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X3555d12b0052c4940de0b0759d42a469.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X366a2d90807cbaac4b91ca55ab45874b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X3772971102310509987f0b60b7352a09.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X378e1e39920b08afeed134b5201a5b02.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X37a9b16103a0811b6a9276cfaec807fb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X37c5a1d653b284dfc8140c6eb44d421f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X3896d9a76c0aae15c983609cd6f79140.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X393ddb2241c33e6574b49cbbc15732d2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X398dea5e70492d48c32e8693e188dd56.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X39b86c5cf1303793a7b6a7a76370abbd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X3a04f76b8141fa385ac6dcadc97ac916.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X3aeb83208e99f86e6a459e904047f002.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X3c34a0c4bf8f39fd78f368ab26b9c056.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X3c486abacc9e0cd88e8bc6f5952555d9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X3c8f18b6c3f6064a0d6e19aa0354a337.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X3d3007df4ee0ebfe34691807c219db91.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X3d3ff85d1e5251a3335dd810af0d8e80.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X3d445a6c863e6d8b73df96fb5ad7ac08.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X3d4c875ef6fb9125d8b3fa0839461d85.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X3d667f2ae1adfefafa34df20f62e00fd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X3e4ed55c1a158ddef5d4fb29c7b324e9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X3f0f5a1c898b44bcca7a36b71f4a514c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X3f93e664a6b081017fe93c55b3104ff1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X3fb56bffad487e8c759de0d6566bf38f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X3ff57ecf6457dfccd7badcbf02c9583f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X41d3ff239a3a55e756a46a623a820b4e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X41d6d95c84e4d9cdc41a975ca8b6ec33.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X41e626bf153af0f48734f8fa20c84701.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X423cffc03b344e94f68b2b60502f32ff.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X4323b049c22085ecdbbdf0c9374e77fa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X438ef31cbc6874cf89c04984eb33019b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X43bfdcf46c681655b50f7a43e787931d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X447b6760742eea42ae4d3cd356e33749.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X45774272a12535284bfdf543b673eca6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X462c89ebcea0c5f7ea2a733600d02775.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X465a307bb04d18d6afe6f7976633a31a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X46f628fa458516d8d8b0e2ad6caf9d12.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X4725e93602937dbbf5df530628dc4f2d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X47db3105ca2a835e57aebd3200c31bc1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X47df3288aa62023c88295033f1ed181c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X486994e7e2b0fbd059f51084224188cb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X487f80f44c649e2cbeaf247a8fade719.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X48dcaffe3d225cdced6be2a75b29df36.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X4977dfff2b5c20060b86526f292eec91.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X4a7d46a82a4f5af5225f582d4d69ee30.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X4afa5ce4601d89a85e3c8510938be256.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X4bf54af0c2e3b38324d2c00e35a99d4d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X4c18848f0fe79b2cafb37e85d46f74ee.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X4ca68be350930a5c096e74fe9e1c28b2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X4ce82422fd80b52ad0bf0eb5c9cc9716.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X502667f3819387ff156dfdfe0dbfe56e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X50f68c8ecc2cd1ae23a4ca8c5f9b3965.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X5179b45c5332a54d2c3d2391ce6bb394.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X53e50e07d706a3dd38c635105b5f2a23.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X549407b75c2ee30c5652a26b3252f1bc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X5593bd10c81b2c1eb6c61abc5384587a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X5650d8762cde6ac47d7017c3e4fea2d4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X56b53ebde30e61c17bd04ab6edebbb1c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X56cfd0de6b7db413b5862e1c6d372081.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X56fc9f41765d8841ab5d7653c4ec1fdf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X57e6d89e825acda4f4b1884706f48dd4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X57fdecd43cb8c928be996b9eb4b29900.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X5857c1c15679e53a9a73c2b046ea24c4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X59bd9b4e307ecb250fcabee6765991d9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X5b4e7dbef1d03d2704d5b0e11d6b362e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X5c99f28e9026e973489eea5fbffdf050.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X5ee9ea1c63b4933daca7162f32c3488b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X5ef11e9ca39f60a7823d79e2917705b6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X617e2f5189446d72ed5a61bf09c1d2da.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X61cabe1f294effdabedfe6508f24b80c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X628946fbc44228720af28badf15cd9b7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6302498313658327d5500ec20dbcc50e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X630fa0cd8b4cbe3699807019cba81d8b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6399d5253abe4a92705c00913bb58ae1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X63cda893cdd67ede36187bdd195750a4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X646c5eee5a762a118c2d32b4f6a822b8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X65335e5ce8a013d83923a704dd04acb8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X653cd44d2a8e69e46339832f3f2ee5e6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X662dc91ae6d7aea4b679daee6bd46f81.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X66598ab30a6345a1fc0e53c72e46a843.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X667369ca26f09666399bcf92054abb10.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X66895409c3d7bc40be0b057f2e842be7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X67fbf11990e104aa51cfdf80b2733f62.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6802cbb67c08a93546027d91fa26fdcb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X68296eae3dc022dd25c19eab1b424365.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6978910b9cc658635e65cfe1042f168c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6a785dba093103e41d831f013036e8e6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6ab2c6eddfa057bc47be43e6d1ccc4e4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6ad9cc4a6e4bc9df125c51161c47f1fb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6b5388115cc898f7ac351c891cc0a3f9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6cb495b71be9fd885554f02dae552b75.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6d1693b8a2a99ca5fffc7e85ba6bfffd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6d2fc4a4521dfe33d3c8cf0a762ad4bc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6d37dd98ddd3156dda2ff94627aa2c72.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6d571178c0aeaa0a1c7e4995322ca388.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6d5bcf8e670c89555fbf0932059ec19e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6e001d0a557aec2c8fa9417fdb444b25.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6e043822486bed43a10ece6acf19f91e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6e36d06d7fc92126759b1a5104381853.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6e8048e25bbb68e4f8e1348af41d1fd3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6ec5bfaec5bc34d36692b930e733665e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X6ed9c8184751ff0d10faeeb927c40d31.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X70a717675ecae70e53c68ad75486250f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X712c0dad0a06f1bbc0dce70fbd01364a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X7248e26922175e7323911a7ac237acce.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X75e18173ba3f0362b7ec157a568d5194.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X766a8cf6ea415fbeeceadb075332c148.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X766f70f8c812244f40ba302abe3ba92c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X7689e6e180f4a8321fe3c0331c64df45.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X775b9dd18f167f9eb528f0fddb14f68d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X77b44bd2c951e731512da7220015fa0e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X78940b58c7be9e03fae5c71a59d52ecf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X78cbafa867d6bb52bbf07d91c48d1cdd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X795bdee76133793188db345c1995819a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X79e121eb474fe3da85ff939aeb6dc1e1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X7a3824eddb6046a17d0a2b17e2c48177.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X7c3e1557f50749eafd997c841580262f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X7ce2a2adb96cc732a85daa7cb7343146.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X7d068092e62d287d5900758223bf7a0f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X7da1497e6fb333feeb50f9f732c4dc02.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X7dea99db5352aa4e9591537cfc459ea9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X7e1138461be15663118151cbe1097fde.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X7e3c4e2cbb1ed62a6e256ce6eeebd68b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X8045ed1d996797109472cc98af91e87f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X8046371d619c7314a2f83231a6627a2f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X806ac196959e35e5606360bda7300b2b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X80bcf79d6a25ee41ff453b58a0b9488a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X81787bb5a674c71aa5391b265915038d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X82098238add1ae54b9e818f52b3ee65a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X829d8aa2fd2834c9c3b459efbd5f78f2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X82bae2136926e726448c4d0980a30531.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X82fbabfce1be5e02e4e567894d509ac8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X834e3ff240adea4279369b69158b1d2c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X83ed8a0301f8aac225b0ba802000d5e8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X858d1a2aa0101a363c36b677ec449661.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X85c60192d5d825125f610098dae9c50f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X85ec16ea3d20e0783ae1121e7962b604.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X860760c29149d3cacc6dbcb77b38d21c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X86f2250ceeac1d0f6b01976e6fe239b5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X87190d9eda2813b508c45692d6b73308.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X884d48f2ead3c3bfde97b791a9b4fb07.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X8a2caa5d1cfa08aa7cf03c14d12d263d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X8a861559749ec9a94431ef223b722b58.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X8abe25aaac98a66d1c7def471083181e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X8ac9a116691ef84519c568e4268bc39f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X8add7efbf2318b4e49c5fa1102d3c9a8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X8b04793facbb1947070a5a270f88e07f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X8b37a3c248bb8d17e946a9258e0927bb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X8b61d21fd5e60d3549ffda8f349cdc50.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X8cb125365ba38fcf638b2ab20084c1ce.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X8d15a3bb8b2c08b0c234e3d472f8bcee.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X8dde3999fea455bc3c1d428d8207643e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X8e0efa1a26eb9cecd8911e69bf27f131.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X8e492bde5e69fa5dec43b73330ce1ec2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X8e5bcf93831f0a6a05f0a93440ead409.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X8e78ada726b5386492d6e1070e15d772.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X8f8d6be56a848261cacd397aae207bb3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X9147c6b9d371330af6c47e8514888e51.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X914cb07f9e5bcc2b66217ff999c27450.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X914f9e6f1b18612c98d14d5be71c45d7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X91ad943b63c2fe18752eca530bb2183b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X9292ef29f41eef4b632902f6fed80228.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X9303fc9f67b458c799ce54d39e6a320b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X934d1d1c03126c50a7794da6ef56f007.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X93b73ee79f895ca00857c84d2601f0ce.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X945f2d614fda1964531b7cd019fe7599.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X9485f35becb608b7d332547d3e9bdfbe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X94ad826e3ce62fa739f86f280b8c3a39.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X9608062449baec729b74f4049edbb749.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X960cae900d7d4956f597422a34ae07b5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X963690600d14d79fecefa24965adc7a6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X970b49655d1f44f71f9757803afa9394.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X97bdbb93e267235bd942266bedd24373.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X984902ade35ac2c774bdb1a9f3cfe11a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X99a690a634327bdc200b3d9a582d2c01.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X9a0b29286315140df8c91e395036b8b5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X9a14b8c7579a6be4c4ee3fe719d0f512.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X9a60678bbd0c348a84e920dd9b8a64a0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X9ae830c94ba76d04e821960814e3cfeb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X9b67f979466a07a88d60195ae476f174.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X9c7ed51d1ff863ac274f793d76de0888.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X9d3f712212ae9581c5482cb38c09b986.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X9d4ced98ae29691246b39064258948ec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X9e32e29ee459ca77c19edf8ecfe244fa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X9eae38ce5da8125fc0988465614b2157.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X9f2bdb2b6795fa2ab9ed4da8882645d9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/X9ff48da8dcadac0f2c3364109e6de599.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xa0256c48e08748d02cd64362cd65f890.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xa0439d838426e0912e462a8a5530d752.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xa0612ecc8024a2372f7471fc4ad9020e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xa08911dfde2040244b17ced3dc2194e5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xa0e3c4863ba5f61ea4b1c8eb6c56e119.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xa290ecd69f79a843470c8da47f9d581b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xa29a2d67bfbeeb1858d1c6f1d84318f1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xa2f09e7e2ee6ac81a11730de62cf97e7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xa3c6a65bf715343ed17dc30812457452.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xa3e6e825a51efaf37143fb1123e4f6e8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xa51e4031c2c52e7575c858749d62e619.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xa59bec9b9e3404dbd3424b79d87f2bf1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xa5b29fc382ddf1abb37808e8c0ee2a05.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xa6ab473dbaaaaedc13f5c5a08b4dc720.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xa7635e8e1c39820ea07b4e3073100aa9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xa7fb316c4502de1472d5e1443a7851c3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xab1bd13b606cc14d07ab42459be08bbf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xac02479078bb9cc77636ab44cf928618.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xac077d4d0895d6c7affe03b7d6ae1558.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xac534233a0cc659b9ac544e7fe71ad93.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xace160640f6efd9f56c8e97c388c6cd9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xaddf65516dbca89bfe27735597ed43bf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xae1764e27ff36483d878f15f945b651b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xaef49893256b5dd7fc144ab42b170e71.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xaf21f5da2c53021882cd70bdf5bed80c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xb090a94d4c328004b918c6c9112e49fe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xb0e42b38f27d1936069d865c8ae0693b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xb21e478555de3a2a03e155ced861b2a5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xb2fcbea3559223ecc5a78741b79a3a10.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xb38c3e0a3c0471ffb51f753126e73793.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xb3b11fe5ab7f85f2d59a3b546ab44602.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xb3ffa37b13a26d779e94d0ae861e646e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xb443aa97b048deb7ff0f6c7f726c56c2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xb518f4aa6056944819703050d09bf238.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xb73985b5c5ea041264fcb6b965d0c0fc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xb83d79cbaf1bf16d4305fe1b5f0fb794.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xb8680df80b59f1b1afec89af96abe039.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xb888cac10b232b93611f5b07a54aa616.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xba6397b84324e479ab0eaa18aa63278c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xba967ceba276565cef0220e6d17fbf1d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xbb77320393589f5bf23267df5f3f028f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xbba4d52ceda37fa83a7c98825ca8a9c5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xbbc64f377967e9a887be4d507f6b7a5a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xbc99daada74b01b1f8ec2ffccae12c60.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xbd60e0f8782f99c7830dfb952d1daf6c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xbe2823b05dd0a621d815083f5bbbfd81.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xbe4670ec46a5dafe6ad06ac166c284a2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xc227c5acc261ae64e866516d5e9b30cb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xc25db99152be7f3797e352821ce8c5e2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xc320ee0e2b874c0f18d63100e68a9f3c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xc47715b62395b6f21221296fd11ba4e3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xc4fcd4a502e5b5a2b0ccda4357f8ef0d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xc59a53fa2403a7c8987f1b9f121d185b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xc5ad5c84dbfe455e3e7b2b988ce4f5bf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xc5e521ecf254a1c4c7832fa816c6b3b2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xc613f8462c0cd47359b9f8065f59e2f2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xc6a4a9e4474298cb6def62abf8c2ff3a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xc6ff237bc93a361e3f4071984991a52b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xc7b4cbf502b4c05d02e47a789e61e838.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xc7c6e091ce2d3e69a485e14d2e4270ca.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xc8111a6181617aa3f96d6b4f45d07b0b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xc87dc8f161a71597bce72d185ef79cc1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xc903d57e80f056a75899c70e52035026.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xc92d9fe18f184bb61f1a8dc4f36a1202.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xc94b3ac921a1835c0c0a7ea04bb33cab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xc9c15f1549094d1c8dcb46310d435951.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xcad22594519c37245e7cac9cf6c3795d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xcade0f07fc7760115b2a9b8ebccf239c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xcb0c05acd898a26d3c9f9353ed0716d2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xcb470bf1964304c4ee70b3fe7511d899.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xcc0828d27d9255287b04cb431ae152ed.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xcc4d643f38f50db3f3f2e06537ded036.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xcc674b6b58a2d907a38826df6ba36906.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xcd0a25a8871af59932660fee7089f4ac.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xcd8537a0034433205c2353b8df83d536.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xcdfb9e166b48b4796b8e8fbe59b0732a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xce1e56cdde8192fdddd6f90cdae66c13.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xd11bd891473e60005cce7c39263a0f99.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xd1584477d396652ada248c2553ea552e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xd286fda08e6ffc52ab444da981a03e96.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xd2f228ab1148ba038291d49142b8b9bd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xd4208eb43e0d050f8422233c3ea6ba9f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xd451d13d7a06b84d923f7ca081c3c8f3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xd77cba9ee5640da013a96773788ae1b9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xd7cf69a179bd3f81c9abb6646cdc19a5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xda13943c23635da89231e71a2350ea96.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xdb303fd29e08309054e0f78c183d3491.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xdb5814d2084dad85f1b939dce8a51123.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xdbd7fc81ae1e7cb1fd2093752e237689.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xdc5de4ddadf86bdf0de045a6dc7bf776.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xdccd86db22ca05e075ceb1e8288ee0af.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xdcf1aba10ed4557b39f09f37836d0298.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xdd78fe6450f2b963c43d643a26355870.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xde8ce7777c82ff128a5176a3f45458c5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xdecfd82e1143a44f606c8fc1f7a9446c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xdfb6fc5c48aeb757cef9a88469b96b7d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xdff49e8c4892fd6e508d4f7cc1914aaf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xe07f08d891cfb661fd5da535e0380c7c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xe0d204b1d10aa8ac5fa61105cb5675b0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xe20aea5f986101a6b49c7af6e0c80aba.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xe367b3a3efce80dcbedaa4ca7eb18ed4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xe417687d963af3a2be33e018a6202a07.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xe51e9ebac1b076ff5d6b4af6384ede1d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xe58f0d2a4b28757ae03fe2f74ce4d54e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xe6670bb893ca4899ec8095bf73fe8739.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xe7438b0113c9062a02ad166f2c38f5eb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xe7516b1f0556ac4bbac403be0bcd1ac9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xe7998b0ca7f81de257d7cf275c029220.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xe83c65d2f56378c0305b9995b482ca69.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xe89a398ed38c3e98023622ec38d184fc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xe96d1152115081db7510539ad306ed62.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xeaf6fb4b2f50ef3af01ba99fb925c397.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xeb14b0bdbf70fece6335b9376e379701.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xeb4bb45f98e01c6469e27f7314fe7786.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xeb6b8576329c6240f315e8096f213573.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xebc41ba295fb2e157041cc1d5f1eebcd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xebe1ef321a647e0f7575fd9ca38f283f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xec16c8a067b1ea4d1e530672e47dc86e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xec66747e048882d159bb2a1015e5e17d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xec9c5b76bc81feca715a7078f8649d1e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xed11b7a45cdb10b12da2ca53c0c2fe8d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xeef3222ff0e7305e4070c35e58cda563.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xef123e6592131e57a21eed214de517d8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xef6d13b563a3479f083da6dceeed268c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xf00f5405a2e344854cb37d677a1eecec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xf094f4b02fe7228da4dacb68df5adac3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xf0b06198b541f9ea533dc1553773e33a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xf0fd9343aa30f4edb763cc6b0d525810.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xf2bb8fc6be8355954dc392b902e37d92.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xf2ef42a73b0b61ca186ff03bc9ba7cb8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xf350f8765214ede74a2664a1014717cf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xf58c476daaa500caeb96c8d1f4b13dee.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xf63ffd99818537dc38921a7ee2a319a8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xf6a235b78c6e0fd01de443072635faff.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xf6f0f859615c689da42a053558fcb364.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xf8afe28828ec5a61cf19fd28134089da.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xf8be980cc2c220bd766bcd112c987dad.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xf93f2bacce7f8296c4520d050892143d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xf9d519ba29342719c00929beb508b130.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xfa0729ee54b4d3fd67d039ef7a46e81e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xfb44a927a2f53c301780a3f664b98958.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xfd03b19a911fe3afa045132172ef92dc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xfd2906c8a32840cfc45692381276070c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xfd89c553e7c047eaa00c7b5ea1525243.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xfdea7f2c7ace97b87c7529942d1beca4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xfe2529af871ffc7c579b62079281d2e1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xfed0add6e79a9729a983e6a24dc8d656.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xffa7f1085aafc5d6069212d6206a9d9e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xffe252e781690d23153c159052a49956.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cms/storage/debugbar/Xffe4860250f6c685e2ce06a589cb1e02.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/.idea/cms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/.idea/cms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/.styleci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/.styleci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/app/Http/Controllers/AdminUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/app/Http/Controllers/AdminUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/app/Http/Requests/StoreUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/app/Http/Requests/StoreUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/app/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/app/categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/app/categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/app/events.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/app/events.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/app/role.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/app/role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/config/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/config/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/database/migrations/2020_02_09_083502_create_roles_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/database/migrations/2020_02_09_120743_create_events_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/database/migrations/2020_02_09_120805_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/database/migrations/2020_05_01_055117_create_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/database/migrations/2020_02_09_121312_event_user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/public/css/black-dashboard.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/public/css/black-dashboard.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/public/img/12345.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/public/scss/black-dashboard/bootstrap/_code.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/public/scss/black-dashboard/bootstrap/_code.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/css/black-dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/css/black-dashboard.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/css/black-dashboard.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/public/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/public/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/css/nucleo-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/css/owl.carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/public/css/owl.carousel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/css/owl.theme.default.css" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/public/css/owl.theme.default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/demo/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/demo/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/views/admin/Books/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/public/css/icon-font.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/views/admin/Books/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/resources/views/admin/Event/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/views/admin/Books/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/resources/views/admin/Event/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/views/admin/admin-dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/resources/views/admin/admin-dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/views/admin/categories/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/resources/views/admin/Event/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/views/admin/categories/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/views/admin/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/resources/views/admin/categories/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/views/admin/user/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/resources/views/admin/user/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/views/admin/user/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/resources/views/admin/user/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/views/admin/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/resources/views/admin/user/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/views/home.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/routes/channels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cms/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/webpack.mix.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../cms" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1aEAT0SG6DfSfgmtivmpMfgyku0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\xampp\htdocs\twitter\resources\views\friends" />
+      <recent name="E:\xampp\htdocs\twitter\resources\views\home" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6fda445d-8ae1-4360-bf35-cb4fce44fa5d" name="Default Changelist" comment="" />
+      <created>1586290384432</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586290384432</updated>
+      <workItem from="1586290390489" duration="2319000" />
+      <workItem from="1586292740013" duration="17729000" />
+      <workItem from="1586348450191" duration="36516000" />
+      <workItem from="1586398127307" duration="315000" />
+      <workItem from="1586430949080" duration="65760000" />
+      <workItem from="1586725410052" duration="6565000" />
+      <workItem from="1586736819320" duration="11686000" />
+      <workItem from="1586755010447" duration="463000" />
+      <workItem from="1586785721885" duration="227000" />
+      <workItem from="1586787228858" duration="194000" />
+      <workItem from="1586887332793" duration="9218000" />
+      <workItem from="1586958523132" duration="991000" />
+      <workItem from="1586970281540" duration="976000" />
+      <workItem from="1587062892872" duration="17688000" />
+      <workItem from="1587136027238" duration="4435000" />
+      <workItem from="1587174657270" duration="14510000" />
+      <workItem from="1587779841134" duration="88000" />
+      <workItem from="1588053489570" duration="1024000" />
+      <workItem from="1588068563028" duration="259000" />
+      <workItem from="1588107656179" duration="18777000" />
+      <workItem from="1588188102679" duration="627000" />
+      <workItem from="1588273572137" duration="14324000" />
+      <workItem from="1588309370845" duration="1195000" />
+      <workItem from="1588321096790" duration="383000" />
+      <workItem from="1588400086650" duration="105000" />
+      <workItem from="1588401436227" duration="786000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="411" y="173" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586351765707">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="411" y="173" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1586351765707" />
+    <state x="413" y="125" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586893579615">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="413" y="125" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1586893579615" />
+    <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1588400195945">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1588400195945" />
+    <state x="518" y="293" key="NewPhpFileDialog" timestamp="1586474705753">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="518" y="293" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1586474705753" />
+    <state x="378" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1588400118462">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="378" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1588400118462" />
+    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588108436448">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1588108436448" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1586450850548">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1586450850548" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1588281846915">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1588281846915" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="NONE" type="php">
+          <url>file://$PROJECT_DIR$/app/Notifications/likes.php</url>
+          <line>26</line>
+          <log-expression expression="    {&#10;        return ['database'];&#10;    }" language="PHP" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/_tweet_body.blade.php</url>
+          <line>66</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
